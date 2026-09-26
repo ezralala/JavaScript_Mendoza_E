@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App - Open-Meteo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>Weather App 🌤️</h2>
+
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city name..." value="Manila">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div id="error-msg" class="error">City not found. Try another city.</div>
+
+    <div id="weather-info" class="weather-info">
+      <div class="city-name" id="city-display">--</div>
+      <div class="coords" id="coords-display">Lat: -- | Lon: --</div>
+
+      <div class="temp-container">
+        <div class="temperature" id="temp-display">--°C</div>
+        <div class="condition" id="condition-display">--</div>
+      </div>
+
+      <div class="details">
+        <div class="detail-item">
+          <span class="detail-label">Wind Speed</span>
+          <span class="detail-val" id="wind-display">-- km/h</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Humidity</span>
+          <span class="detail-val" id="humidity-display">--%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
